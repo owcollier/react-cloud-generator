@@ -1,10 +1,10 @@
-#React Cloud Generator
+# React Cloud Generator
 
 A word cloud generator/library bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
  React Cloud Generator relies on [react-tag-cloud](https://github.com/IjzerenHein/react-tag-cloud) to generate and render the clouds. Props to [d3-cloud](https://github.com/jasondavies/d3-cloud) working under the hood.
 
-###What does it do?
+### What does it do?
 
 React Cloud Generator allows **you** to create word clouds based on text input and store them in the React Cloud Generator library. Just plop in some text, click generate, and you're on your way!
 
