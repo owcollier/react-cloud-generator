@@ -20,8 +20,6 @@ Once you have created a word cloud, you can edit the cloud (keep tweaking until 
   * [MongoDB](https://www.mongodb.com/)
   * [Mongoose](http://mongoosejs.com/)
 
-  !!!
-
 
 
 
