@@ -7,6 +7,7 @@
     "d3": "^4.12.2",
     "d3-cloud": "^1.2.4",
     "d3-dispatch": "^1.0.3",
+    "dotenv": "^4.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "jquery": "^3.2.1",

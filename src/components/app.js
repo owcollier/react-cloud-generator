@@ -27,7 +27,7 @@ export function App(props) {
   }
 
   return (
-    <div>
+    <div className="root-div">
       <Header />
       <hr></hr>
       <main role="main">
