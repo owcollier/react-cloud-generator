@@ -1,0 +1,19 @@
+nav-container {
+    width: 80%;
+    display: block
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center
+}
+
+ul {
+    text-align: center
+}
+
+.nav-items {
+    display:inline;
+    padding: 5px;
+    text-align: center
+}
