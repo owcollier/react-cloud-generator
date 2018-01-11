@@ -1,4 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+#React Cloud Generator
+
+A word cloud generator/library bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+ React Cloud Generator relies on [react-tag-cloud](https://github.com/IjzerenHein/react-tag-cloud) to generate and render the clouds. Props to [d3-cloud](https://github.com/jasondavies/d3-cloud) working under the hood.
+
+###What does it do?
+
+React Cloud Generator allows **you** to create word clouds based on text input and store them in the React Cloud Generator library. Just plop in some text, click generate, and you're on your way!
+
+Once you have created a word cloud, you can edit the cloud (keep tweaking until you get it *just* right) and browse the React Cloud Generator library to look at word clouds created by others (or to revisit/edit your own glorious clouds).
+
+
+
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
@@ -2226,4 +2241,4 @@ In the future, we might start automatically compiling incompatible third-party m
 
 ## Something Missing?
 
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md) -->
