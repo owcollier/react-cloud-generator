@@ -12,13 +12,13 @@ Once you have created a word cloud, you can edit the cloud (keep tweaking until 
 
 ## Technologies used:
 
-1.**On the front-end:**
-  *React
+1. **On the front-end:**
+  * React
 
-2.**On the back-end:**
-  *Node.js & Express
-  *MongoDB
-  *Mongoose
+2. **On the back-end:**
+  * Node.js & Express
+  * MongoDB
+  * Mongoose
 
 
 
