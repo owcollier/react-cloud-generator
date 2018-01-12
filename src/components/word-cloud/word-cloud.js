@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import GeneratorForm from './generator-form';
-import {goEdit, downVoteCloud, upVoteCloud} from '../actions';
+import GeneratorForm from '../generator-form/generator-form';
+import {goEdit, downVoteCloud, upVoteCloud} from '../../actions';
 import TagCloud from 'react-tag-cloud';
 import randomColor from 'randomcolor';
 import './word-cloud.css';

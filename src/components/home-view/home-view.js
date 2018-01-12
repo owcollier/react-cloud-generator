@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import GeneratorForm from './generator-form';
+import GeneratorForm from '../generator-form/generator-form';
 // import LibraryCarousel from './library-carousel';
 
-import { fetchClouds } from '../actions';
+import { fetchClouds } from '../../actions';
 
 export function HomeView(props) {
   return (

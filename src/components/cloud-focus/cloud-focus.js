@@ -1,5 +1,5 @@
 import React from 'react';
-import Wordcloud from './word-cloud';
+import Wordcloud from '../word-cloud/word-cloud';
 import { connect } from 'react-redux';
 
 export class CloudFocus extends React.Component {
