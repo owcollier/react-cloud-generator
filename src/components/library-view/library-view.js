@@ -1,5 +1,4 @@
 import React from 'react';
-import LibraryCarousel from './library-carousel';
 import LibraryList from './library-list';
 
 export default function LibraryView(props) {
