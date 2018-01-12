@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './top-nav.css'
 
-import { goHome, fetchClouds} from '../../actions';
+import { goHome, fetchClouds} from '../../actions/actions';
 
 export function TopNav(props) {
     
@@ -22,9 +22,7 @@ export function TopNav(props) {
 
     return (
       <div className="nav-container">
-        <h1>
-            {headerMessage}
-        </h1>
+        {headerMessage}
         <nav>
             <ul className="nav">
                 <li className="nav-items">

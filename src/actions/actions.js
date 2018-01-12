@@ -1,4 +1,4 @@
-import {API_BASE_URL} from './config';
+import {API_BASE_URL} from '../config';
 
 export const FETCH_CLOUDS_REQUEST = 'FETCH_CLOUDS_REQUEST';
 export const fetchCloudsRequest = () => ({

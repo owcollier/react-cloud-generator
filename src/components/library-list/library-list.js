@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {fetchSingleCloud} from '../../actions';
+import {fetchSingleCloud} from '../../actions/actions';
 
 import './library-list.css';
 

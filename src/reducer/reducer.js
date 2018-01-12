@@ -22,7 +22,7 @@ import {
   DOWN_VOTE_REQUEST,
   DOWN_VOTE_SUCCESS,
   DOWN_VOTE_ERROR
-  } from './actions';
+  } from '../actions/actions';
 
 const initialState = {
   view: 'home',
