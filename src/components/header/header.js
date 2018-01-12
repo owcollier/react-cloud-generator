@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './header.css';
 
-import TopNav from './top-nav';
+import TopNav from '../top-nav/top-nav';
 
 export function Header(props) {
 

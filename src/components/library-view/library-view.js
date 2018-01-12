@@ -1,5 +1,5 @@
 import React from 'react';
-import LibraryList from './library-list';
+import LibraryList from '../../library-list';
 
 export default function LibraryView(props) {
   return (

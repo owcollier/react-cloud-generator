@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import {addCloud, updateCloud, removeCloud} from '../actions';
+import {addCloud, updateCloud, removeCloud} from '../../actions';
 
 import './generator-form.css';
 

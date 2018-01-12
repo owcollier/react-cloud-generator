@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import Header from './header';
-import HomeView from './home-view';
-import CloudEdit from './cloud-edit';
-import CloudFocus from './cloud-focus';
-import LibraryView from './library-view';
+import Header from '../header/header';
+import HomeView from '../home-view/home-view';
+import CloudEdit from '../cloud-edit/cloud-edit';
+import CloudFocus from '../cloud-focus/cloud-focus';
+import LibraryView from '../library-view/library-view';
 
 export function App(props) {
 

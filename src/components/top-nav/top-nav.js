@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './top-nav.css'
 
-import { goHome, fetchClouds} from '../actions';
+import { goHome, fetchClouds} from '../../actions';
 
 export function TopNav(props) {
     
