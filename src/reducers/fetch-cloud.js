@@ -15,7 +15,7 @@ const initialState = {
 };
 
 export const fetchCloud = (state = initialState, action) => {
-  switch (action.type ) {
+  switch (action.type) {
     case 'FETCH_CLOUDS_REQUEST':
       return Object.assign({}, state, {
         loading: true,
