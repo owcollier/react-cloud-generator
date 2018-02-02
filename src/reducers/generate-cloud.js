@@ -14,7 +14,7 @@ const initialState = {
   error: null
 };
 
-export const generateCloud = (state = initialState, action) => {
+export default function generateCloud(state = initialState, action) {
   switch (action.type) {
     case 'GENERATE_CLOUD_REQUEST':
       return Object.assign({}, state, {

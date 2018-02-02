@@ -14,8 +14,8 @@ const initialState = {
   error: null
 };
 
-export const reducer = (state = initialState, action) => {
-  if(action.type === GO_HOME){
+export default function reducer(state = initialState, action) {
+  if(action.type === 'GO_HOME'){
     return Object.assign({}, state, {
       view: 'home',
       activeCloud: {
@@ -29,7 +29,7 @@ export const reducer = (state = initialState, action) => {
       }
     })
   }
-  else if(action.type === GO_EDIT){
+  else if(action.type === 'GO_EDIT'){
     return Object.assign({}, state, {
       view: "cloudEdit"
     })

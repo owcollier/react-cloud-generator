@@ -14,7 +14,7 @@ const initialState = {
   error: null
 };
 
-export const updateCloud = (state= initialState, action) => {
+export default function updateCloud(state= initialState, action) {
   switch (action.type) {
     case 'UPDATE_CLOUD_REQUEST':
       return Object.assign({}, state, {

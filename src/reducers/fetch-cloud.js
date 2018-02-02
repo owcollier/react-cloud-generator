@@ -14,7 +14,7 @@ const initialState = {
   error: null
 };
 
-export const fetchCloud = (state = initialState, action) => {
+export default function fetchCloud (state = initialState, action) {
   switch (action.type) {
     case 'FETCH_CLOUDS_REQUEST':
       return Object.assign({}, state, {

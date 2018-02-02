@@ -14,7 +14,7 @@ const initialState = {
   error: null
 };
 
-export const vote = (state = initialState, action) => {
+export default function vote(state = initialState, action) {
   switch (action.type) {
     case 'UP_VOTE_REQUEST':
       return Object.assign({}, state, {

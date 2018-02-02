@@ -14,7 +14,7 @@ const initialState = {
   error: null
 };
 
-export const deleteCloud = (state = initialState, action) => {
+export default function deleteCloud(state = initialState, action) {
   switch (action.type) {
     case 'DELETE_CLOUD_REQUEST':
       return Object.assign({}, state, {
