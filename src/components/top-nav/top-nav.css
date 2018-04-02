@@ -78,6 +78,11 @@
     padding: 5px;
 }
 
+.nav-divider {
+    color: #222831;
+    padding: 5px;
+}
+
 .nav-items a {
     color: #222831;
     text-decoration: none;
@@ -119,6 +124,10 @@
    .header-text-div {
         margin-left: 0.4em;
         margin-right: 0.4em;
+   }
+
+   .nav {
+       font-size: 24px;
    }
 }
 

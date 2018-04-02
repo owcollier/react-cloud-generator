@@ -61,7 +61,7 @@ export function TopNav(props) {
                             Home
                         </a>
                     </li>
-                    <span>|</span>
+                    <span className="nav-divider">|</span>
                     <li className="nav-items">
                         <a href="#library" className="library" onClick={() => props.dispatch(fetchClouds())}>
                             Library
