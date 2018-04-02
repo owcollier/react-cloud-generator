@@ -1,19 +1,137 @@
-nav-container {
-    width: 80%;
-    display: block
+.nav-container {
+    width: 100%;
+    display: flex;
 }
 
-h1 {
-    font-size: 40px;
-    text-align: center
+.nav-flex-1, .nav-flex-2 {
+    width: 50%;
+    max-height: 14em;
 }
 
-ul {
-    text-align: center
+.nav-flex-1 {
+    display: block;
+}
+
+.nav-flex-2 {
+    background-image: url('../../images/ReactCloud.png');
+    background-color: white;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: 150% -20%;
+    background-repeat: no-repeat;
+}
+
+.header-text-div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header-text-div h1 {
+    padding: 0;
+    font-size: 64px;
+    font-weight: 400;
+    margin:0;
+}
+
+.header-text-inner {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.header-icon {
+    display: inline-block;
+    font-size: 48px;
+    text-align: center;
+}
+
+.header-icon-1 {
+    position: relative;
+    left: 38%;
+}
+
+.header-icon-2 {
+    color: #00FFF5;
+}
+
+.header-span {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.nav {
+    font-size: 36px;
+    margin-top: 0.2em;
+    margin-left: 0.2em;
+    margin-right: 0;
+    text-decoration: none;
 }
 
 .nav-items {
     display:inline;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
     padding: 5px;
-    text-align: center
+}
+
+.nav-items a {
+    color: #222831;
+    text-decoration: none;
+    /* text-shadow: 0px 0px 4px #00FFF5; */
+}
+
+@media (max-width: 1400px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-flex-1, .nav-flex-2 {
+        width: 100%;
+        max-height: 10em;
+    }
+
+    .nav-flex-2 {
+        background-size: 90%;
+        background-position: 200% 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-text-div h1 {
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .header-icon {
+        font-size: 24px;
+    }
+    
+    .header-span {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+
+   .header-text-div {
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+   }
+}
+
+@media (max-width: 700px) {
+
+    .nav-items {
+        display:inline;
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+        padding: 5px;
+    }
+
+    .nav-flex-2 {
+        background-size: 80%;
+        background-position: 150% 0%;
+    }
 }
