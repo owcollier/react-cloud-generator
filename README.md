@@ -14,7 +14,7 @@ Once you have created a word cloud, you can edit the cloud and browse the React 
 
 ## React Cloud API
 
-React Cloud Generator maintains a RESTful API on the back end for the purpose of storing word cloud configurations and retrieving saved word clouds:
+React Cloud Generator maintains a RESTful API on the back end for saving word cloud configurations, updating word cloud configurations, and retrieving saved word clouds.
 
 Repo for the back end can be found **[here](https://github.com/owcollier/react-cloud-generator-server)**
 
