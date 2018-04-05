@@ -8,11 +8,9 @@ export class LibraryList extends React.Component {
   render() {
 
     const clouds = this.props.clouds.map((cloud, index) => (
-        <a className="list-item" onClick={() => this.props.dispatch(fetchSingleCloud(cloud.id))}>
+        <a key={cloud.id} className="list-item" onClick={() => this.props.dispatch(fetchSingleCloud(cloud.id))}>
           <li className="cloud-list-item" key={index}> 
-            <h7>{cloud.title}</h7>
-            <span>{cloud.upvotes}  <i className="fa fa-thumbs-up" aria-hidden="true"></i>    </span> 
-            <span>{cloud.downvotes}  <i className="fa fa-thumbs-down" aria-hidden="true"></i></span>
+            <span className="cloud-list-item-span">{cloud.title}</span>
           </li>
         </a>
       ));

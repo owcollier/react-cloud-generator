@@ -1,0 +1,12 @@
+.footer-link-a {
+  width: 100%;
+  text-align: center;
+
+  padding-top: 1em;
+
+  cursor: pointer;
+}
+
+a {
+  font-size: 24px;
+}

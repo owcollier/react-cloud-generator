@@ -6,18 +6,28 @@ ul {
 
 .cloud-list-item {
     list-style: none;
-    border: black solid 1px;
-    border-radius: 5px;
-    width: 40%;
-    padding: .25%;
-    margin: .25%;
+
+    background-color: #393E46;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    width: 50%;
+    padding: 8px;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-size: 24px;
+
     text-align: center;
     cursor: pointer;
+
     margin-left: auto;
     margin-right: auto;
 }
 
-h7 {
+.cloud-list-item-span {
     font-size: 100%;
     display: block
 }
@@ -26,10 +36,10 @@ span {
     font-size: 75%
 }
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
+@media (max-width: 800px) {
+
     .cloud-list-item {
-        width: 100%;
+        width: 90%;
     }
+
 }

@@ -31,28 +31,26 @@ export class Wordcloud extends React.Component {
         return (
             <div className="word-cloud-outer">
                 <div className='word-cloud-inner' style={cloudFontStyle}>
-                    <TagCloud 
-                        className="tag-cloud"
-                        style={{
-                        fontSize: 30,
-                        fontWeight: 'bold',
-                        fontStyle: 'italic',
-                        color: () => randomColor({
-                            hue: this.props.activeCloud.color
-                        }),
-                        padding: 5
-                        }}>
-                        {words}
-                    </TagCloud>
+                    <div className="absolute-cloud-container">
+                        <TagCloud 
+                            className="tag-cloud"
+                            style={{
+                            fontSize: 30,
+                            fontWeight: 'bold',
+                            fontStyle: 'italic',
+                            color: () => randomColor({
+                                hue: this.props.activeCloud.color
+                            }),
+                            padding: 5
+                            }}>
+                            {words}
+                        </TagCloud>
+                    </div>
                     {this.props.view === 'focus' && <div className="edit-form">
                         <form onSubmit={(event) => this.onSubmit(event)}>
                             <button type="submit" name="submit" id="editWordCloud" className="button">
                                 Edit Word Cloud
                             </button>
-                            <div>
-                                <span>{this.props.activeCloud.upvotes}</span> <a onClick={() => this.props.dispatch(upVoteCloud(this.props.activeCloud.id, this.props.activeCloud.upvotes))} href="#thumbsUp" className="thumbs-up"><i className="fa fa-thumbs-up" aria-hidden="true"></i></a>
-                                <span>{this.props.activeCloud.downvotes}</span> <a onClick={() => this.props.dispatch(downVoteCloud(this.props.activeCloud.id, this.props.activeCloud.downvotes))} href="#thumbsDown" className="thumbs-down"><i className="fa fa-thumbs-down" aria-hidden="true"></i></a>
-                            </div>
                         </form>
                      </div>}
                      {this.props.view === 'cloudEdit' && <div className="edit-form">

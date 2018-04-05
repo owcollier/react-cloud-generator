@@ -5,3 +5,60 @@ body {
   background-color: #222831;
   color: white;
 }
+
+.absolute-cloud-container {
+  width: 100%;
+  height: 100%;
+}
+
+.tag-cloud {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tag-cloud div {
+  font-size: 30px !important;
+}
+
+button {
+  display: block;
+  width: 40%;
+  
+  font-family: "franklin-gothic-urw-comp",sans-serif;
+  
+  font-size: 24px;
+  padding: 10px;
+  
+  border-radius: 8px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+  form {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  .tag-cloud div {
+    font-size: 24px !important;
+  }
+
+}

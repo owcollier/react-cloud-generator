@@ -29,7 +29,6 @@ export function App(props) {
   return (
     <div className="root-div">
       <Header />
-      <hr></hr>
       <main role="main">
         {page}
       </main>

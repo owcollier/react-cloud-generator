@@ -23,9 +23,12 @@
 
 .header-text-div {
     margin-top: 1em;
-    margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
+
+    padding-bottom: 1em;
+
+    border-bottom: 1px solid white;
 }
 
 .header-text-div h1 {
@@ -86,6 +89,10 @@
 .nav-items a {
     color: #222831;
     text-decoration: none;
+    font-weight: 800;
+    font-size: 30px;
+
+    cursor: pointer;
     /* text-shadow: 0px 0px 4px #00FFF5; */
 }
 
@@ -106,6 +113,12 @@
 }
 
 @media (max-width: 800px) {
+
+    .header-text-div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .header-text-div h1 {
         font-size: 28px;
         font-weight: 800;
@@ -122,8 +135,8 @@
     }
 
    .header-text-div {
-        margin-left: 0.4em;
-        margin-right: 0.4em;
+        margin-left: 0;
+        margin-right: 0;
    }
 
    .nav {

@@ -1,9 +1,93 @@
 .textArea {
   width: 100%;
-  height: 8em;
+  height: 14em;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  border-radius: 8px;
+
+  font-size: 20px;
 }
 
 form {
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 2em;
+
+  border-bottom: 1px solid white;
+}
+
+.generator-form-flex {
+  padding: 2em;
+  background-color: #393E46; 
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+label {
+  font-size: 24px;
+}
+
+input {
+  width: 20em;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  margin-left: 1em;
+
+  font-size: 20px;
+
+  margin-bottom: 1em;
+}
+
+.select-flex-div {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  font-size: 20px;
+  background: white;
+
+  font-family: "franklin-gothic-urw-comp",sans-serif;
+
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* #generateWordCloudButton {
+  display: block;
+  width: 40%;
+
+  font-family: "franklin-gothic-urw-comp",sans-serif;
+
+  font-size: 24px;
+  padding: 10px;
+
+  border-radius: 8px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+} */
+
+@media (max-width: 800px) {
+
+  input {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .textArea {
+    width: 98%;
+    height: 8em;
+  }
+
+  .generator-form-flex {
+    padding: 0.5em;
+  }
+
 }

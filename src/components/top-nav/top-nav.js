@@ -18,7 +18,7 @@ export function TopNav(props) {
                     <span className="fas fa-cloud header-icon-1"></span>
                     <span className="fas fa-cloud header-icon-2"></span>
                 </div>
-                <h1>React Cloud Library</h1>
+                <h1>React Cloud Generator</h1>
             </div>
         </div>
       }
@@ -57,13 +57,13 @@ export function TopNav(props) {
             <nav>
                 <ul className="nav">
                     <li className="nav-items">
-                        <a href="#home" className="home" onClick={() => props.dispatch(goHome())}>
+                        <a className="home" onClick={() => props.dispatch(goHome())}>
                             Home
                         </a>
                     </li>
                     <span className="nav-divider">|</span>
                     <li className="nav-items">
-                        <a href="#library" className="library" onClick={() => props.dispatch(fetchClouds())}>
+                        <a className="library" onClick={() => props.dispatch(fetchClouds())}>
                             Library
                         </a>
                     </li>
