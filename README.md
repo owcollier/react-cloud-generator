@@ -2,25 +2,40 @@
 
 A word cloud generator/library bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+See it live at **https://react-cloud-generator.netlify.com/**
+
  React Cloud Generator relies on [react-tag-cloud](https://github.com/IjzerenHein/react-tag-cloud) to generate and render the clouds. Props to [d3-cloud](https://github.com/jasondavies/d3-cloud) working under the hood.
 
 ## What does it do?
 
 React Cloud Generator allows **you** to create word clouds based on text input and store them in the React Cloud Generator library. Just plop in some text, click generate, and you're on your way!
 
-Once you have created a word cloud, you can edit the cloud (keep tweaking until you get it *just* right) and browse the React Cloud Generator library to look at word clouds created by others (or to revisit/edit your own glorious clouds).
+Once you have created a word cloud, you can edit the cloud and browse the React Cloud Generator library to look at word clouds created by others (or to revisit/edit your own word clouds).
+
+## React Cloud API
+
+React Cloud Generator maintains a RESTful API on the back end for the purpose of storing word cloud configurations and retrieving saved word clouds:
+
+Repo for the back end can be found **[here](https://github.com/owcollier/react-cloud-generator-server)**
+
+ * All word clouds in the database are exposed server side via a GET request to the **/clouds** endpoint
+
+ * Individual word clouds are exposed via a GET request to the **/clouds/:id**, where the id is stored in the database model for the cloud
+
+ * POST requests to save a word clouds are directed towards the **/clouds** endpoint, and PUT requests to edit words clouds are directed towards        the **/clouds/:id** endpoint where the id corresponds with the word cloud to update
+
+ * DELETE requests to remove word clouds from the database are directed towards the **/clouds/:id** endpoint, where the id corresponds with the         word cloud to delete
 
 ## Technologies used:
 
 **On the front-end:**
   * [React](https://reactjs.org/)
+  * [Redux](https://redux.js.org/)
 
 **On the back-end:**
   * [Node.js](https://nodejs.org/en/) & [Express](https://expressjs.com/)
   * [MongoDB](https://www.mongodb.com/)
   * [Mongoose](http://mongoosejs.com/)
-
-  !!!
 
 
 
