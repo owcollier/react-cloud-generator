@@ -4,6 +4,12 @@ A word cloud generator/library bootstrapped with [Create React App](https://gith
 
 See it live at **https://react-cloud-generator.netlify.com/**
 
+<p align='center'>
+    <img width='600' height='450'src='https://i.imgur.com/UnjKI00.png'>	
+</p>
+
+## Props
+
  React Cloud Generator relies on [react-tag-cloud](https://github.com/IjzerenHein/react-tag-cloud) to generate and render the clouds. Props to [d3-cloud](https://github.com/jasondavies/d3-cloud) working under the hood.
 
 ## What does it do?
