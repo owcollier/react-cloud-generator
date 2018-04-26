@@ -33,6 +33,10 @@
     margin-right: 6%;
 }
 
+.header-title-clickable {
+    cursor: pointer;
+}
+
 .header-icon {
     display: inline-block;
     text-align: center;
@@ -40,6 +44,9 @@
 
 .header-icon-clickable {
     font-size: 48px;
+    cursor: pointer;
+
+    margin-right: 0.2em;
 }
 
 .header-icon-1 {
@@ -117,8 +124,7 @@
     }
 
     .header-text-div h1 {
-        font-size: 28px;
-        font-weight: 800;
+        font-size: 36px;
     }
 
     .header-icon-clickable {
@@ -154,4 +160,12 @@
         background-size: 80%;
         background-position: 150% 0%;
     }
+}
+
+@media (max-width: 450px) {
+    
+    .header-text-div h1 {
+        font-size: 30px;
+    }
+
 }
