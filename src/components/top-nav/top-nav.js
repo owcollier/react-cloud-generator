@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './top-nav.css'
 
-import { goHome, fetchClouds} from '../../actions/actions';
+import { goHome, goCreate, fetchClouds} from '../../actions/actions';
 
 export function TopNav(props) {
 
@@ -30,6 +30,12 @@ export function TopNav(props) {
                     <li className="nav-items">
                         <a className="home" onClick={() => props.dispatch(goHome())}>
                             Home
+                        </a>
+                    </li>
+                    <span className="nav-divider">|</span>
+                    <li className="nav-items">
+                        <a className="create" onClick={() => props.dispatch(goCreate())}>
+                            Create
                         </a>
                     </li>
                     <span className="nav-divider">|</span>
