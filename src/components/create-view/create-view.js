@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 
 import GeneratorForm from '../generator-form/generator-form';
 
-import './home-view.css';
+import './create-view.css';
 
 import { fetchClouds } from '../../actions/actions';
 
-export function HomeView(props) {
+export function CreateView(props) {
   return (
-    <section className="home-view">
+    <section className="create-view">
       <GeneratorForm />
       <div className="footer-link-a">
         <a className="library" onClick={() => props.dispatch(fetchClouds())}>Browse the Word Cloud Library</a>
@@ -18,4 +18,4 @@ export function HomeView(props) {
   );
 }
 
-export default connect() (HomeView);
+export default connect() (CreateView);
