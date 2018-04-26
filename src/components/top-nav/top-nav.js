@@ -12,8 +12,10 @@ export function TopNav(props) {
             <div className="header-text-div">
                 <div className="header-text-inner">
                     <div className="header-icon">
-                        <span className="fas fa-cloud header-icon-1"></span>
-                        <span className="fas fa-cloud header-icon-2"></span>
+                        <a className="header-icon-clickable" onClick={() => props.dispatch(goHome())}>
+                            <span className="fas fa-cloud header-icon-1"></span>
+                            <span className="fas fa-cloud header-icon-2"></span>
+                        </a>
                     </div>
                     <h1>React Cloud Generator</h1>
                 </div>

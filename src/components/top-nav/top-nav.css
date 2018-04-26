@@ -35,8 +35,11 @@
 
 .header-icon {
     display: inline-block;
-    font-size: 48px;
     text-align: center;
+}
+
+.header-icon-clickable {
+    font-size: 48px;
 }
 
 .header-icon-1 {
@@ -118,7 +121,7 @@
         font-weight: 800;
     }
 
-    .header-icon {
+    .header-icon-clickable {
         font-size: 24px;
     }
     
