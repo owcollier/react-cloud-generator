@@ -103,6 +103,11 @@ export const goHome = () => ({
   type:GO_HOME
 })
 
+export const GO_CREATE = 'GO_CREATE';
+export const goCreate = () => ({
+  type: GO_CREATE
+})
+
 export const GO_EDIT = 'GO_EDIT';
 export const goEdit = () => ({
   type:GO_EDIT

@@ -55,9 +55,14 @@ export const reducer = (state = initialState, action) => {
       }
     })
   }
+  else if (action.type=== GO_CREATE){
+    return Object.assign({}, state, {
+      view: 'create'
+    })
+  }
   else if(action.type === GO_EDIT){
     return Object.assign({}, state, {
-      view: "cloudEdit"
+      view: 'cloudEdit'
     })
   }
   else if(action.type === UP_VOTE_REQUEST){
