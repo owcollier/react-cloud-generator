@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import GeneratorForm from '../generator-form/generator-form';
-
 import './home-view.css';
 
 import { fetchClouds } from '../../actions/actions';
