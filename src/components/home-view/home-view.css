@@ -14,8 +14,7 @@
   margin-right: 10%;
 }
 
-.home-description h2 {
-  font-weight: 400;
+.home-description p {
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
 }

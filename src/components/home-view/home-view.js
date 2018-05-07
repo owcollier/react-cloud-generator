@@ -9,7 +9,7 @@ export function HomeView(props) {
   return (
     <section className="home-view">
       <div className="home-description">
-        <h2>Welcome to React Cloud Generator!</h2>
+        <p>Welcome to React Cloud Generator, a simple word cloud generator built with <a className="home-description-link">React.js</a> and the <a className="home-description-link">react-tag-cloud</a> library</p>
       </div>
       <div className="footer-link-a">
         <a className="library" onClick={() => props.dispatch(fetchClouds())}>Browse the Word Cloud Library</a>
