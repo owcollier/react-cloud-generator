@@ -16,7 +16,11 @@
 
 .home-description p {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
+}
+
+.home-description-link {
+  color: #00FFF5;
 }
 
 .home-description-p {
