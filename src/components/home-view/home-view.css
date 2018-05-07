@@ -15,10 +15,10 @@
 }
 
 .home-description p {
-  font-size: 24px;
+  margin-left: 10%;
+  margin-right: 10%;
 
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 24px;
 }
 
 .home-description-link {
