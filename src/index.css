@@ -42,7 +42,7 @@ button {
   cursor: pointer;
 }
 
-.footer-link-a {
+.footer-link-a a {
   cursor: pointer;
   transition: color 0.5s ease-in;
 }
