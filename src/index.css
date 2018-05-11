@@ -42,6 +42,10 @@ button {
   cursor: pointer;
 }
 
+.footer-link-a {
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
 
   form {
