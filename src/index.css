@@ -44,6 +44,11 @@ button {
 
 .footer-link-a {
   cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+.footer-link-a a:hover {
+  color: #00FFF5;
 }
 
 @media (max-width: 800px) {
