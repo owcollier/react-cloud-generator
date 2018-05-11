@@ -13,6 +13,8 @@ export function HomeView(props) {
           Welcome to React Cloud Generator, a simple word cloud generator built with <a className="home-description-link">React.js</a> and the <a className="home-description-link">react-tag-cloud</a> library.
           <br></br><br></br>
           Using the Create feature, you can generate word clouds based on text input and customize the result using a variety of color palettes and font families. When you select Create in the navigation menu, you will be provided with a word cloud generator form that looks something like the example displayed below:
+          <br></br><br></br>
+          Insert text into the form provided, provide a title for the word cloud, and select from additional stylistic options - once the form is complete, select the "Generate Word Cloud" button to create your word cloud.
         </p>
       </div>
       <div className="footer-link-a">
