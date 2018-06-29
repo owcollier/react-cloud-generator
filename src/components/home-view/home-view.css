@@ -40,3 +40,35 @@
   border: 2px solid white;
   border-radius: 2%;
 }
+
+@media screen and (max-width: 1200px) {
+
+  .home-description {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .home-description p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .home-image {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 726px) {
+
+  .home-description {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .home-description p {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+}
