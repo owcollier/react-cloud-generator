@@ -1,11 +1,12 @@
 import React from 'react';
+
+import imageOne from './reactCloudGenOne.png';
+import imageTwo from './reactCloudGenTwo.png';
+import imageThree from './reactCloudGenThree.png';
+
 import { connect } from 'react-redux';
 
 import './home-view.css';
-
-import imageOne from '../../assets/reactCloudGenOne.png';
-import imageTwo from '../../assets/reactCloudGenTwo.png';
-import imageThree from '../../assets/reactCloudGenThree.png';
 
 import { fetchClouds } from '../../actions/actions';
 
