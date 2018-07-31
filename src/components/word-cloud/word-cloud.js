@@ -25,22 +25,19 @@ export class Wordcloud extends React.Component {
         //             {word}
         //         </div>
         //   ));
-        // const wordsArr = this.props.activeCloud.words;
-        // const words = wordsArr.map((word, index) => (
-        //     {word:{word}, value:{index}}
-        // ));
+        const wordsArr = this.props.activeCloud.words;
 
         const cloudFontStyle = {
             fontFamily: this.props.activeCloud.font
         }
 
-        const words = [
-            {word: 'hello', value: 3},
-            {word: 'world', value: 1},
-            {word: 'github', value: 1},
-            {word: 'code', value: 1},
-          ];
+        const words = [];
 
+        for (let i = 0; i < wordsArr.length; i++) {
+            words.push(
+                {word:wordsArr[i], value:i}
+            )
+        }
         const WORD_COUNT_KEY = 'value';
         const WORD_KEY = 'word';
 
