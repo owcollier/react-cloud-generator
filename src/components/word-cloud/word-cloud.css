@@ -37,6 +37,10 @@ body {
  transition: 1.4s;
 }
 
+.tag-cloud div {
+  font-size: 30px !important;
+}
+
 .edit-form {
   font-family: sans-serif;
 }

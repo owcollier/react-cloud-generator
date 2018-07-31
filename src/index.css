@@ -19,10 +19,6 @@ body {
   margin-right: auto;
 }
 
-.tag-cloud div {
-  font-size: 30px !important;
-}
-
 button {
   display: block;
   width: 40%;

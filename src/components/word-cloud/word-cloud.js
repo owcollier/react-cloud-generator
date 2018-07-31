@@ -39,6 +39,7 @@ export class Wordcloud extends React.Component {
                             fontSize: 30,
                             fontWeight: 'bold',
                             fontStyle: 'italic',
+                            fontFamily: this.props.activeCloud.font,
                             color: () => randomColor({
                                 hue: this.props.activeCloud.color
                             }),
