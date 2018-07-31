@@ -19,6 +19,7 @@
     "react-scripts": "1.0.17",
     "react-slick": "^0.16.0",
     "react-tag-cloud": "^1.1.1",
+    "react-wordcloud": "0.0.1",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.2.0",
