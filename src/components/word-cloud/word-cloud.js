@@ -19,6 +19,9 @@ export class Wordcloud extends React.Component {
     generateWordsArray(words) {
         const returnArr = [];
         for (let i = 0; i < words.length; i++) {
+            if (!returnArr.find(element => element.word === words[i])) {
+                console.log(`this word not duplicated, ${words[i]}!`)
+            }
             returnArr.push({word:words[i], value:i});
             // if (returnArr[{word:words[i]}]) {
             //     returnArr.push({word:words[i], value: 1})
