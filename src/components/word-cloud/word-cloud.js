@@ -16,6 +16,17 @@ export class Wordcloud extends React.Component {
         this.props.dispatch(goEdit());
       }
 
+    generateWordsArray(words) {
+        const returnArr = [];
+        for (let i = 0; i < words.length; i++) {
+            returnArr.push({word:words[i], value:i});
+            // if (returnArr[{word:words[i]}]) {
+            //     returnArr.push({word:words[i], value: 1})
+            // }
+        }
+        return returnArr;
+    }
+
     render() {
 
         // const deduped = [...new Set(this.props.activeCloud.words)];
@@ -25,19 +36,16 @@ export class Wordcloud extends React.Component {
         //             {word}
         //         </div>
         //   ));
-        const wordsArr = this.props.activeCloud.words;
 
         const cloudFontStyle = {
             fontFamily: this.props.activeCloud.font
         }
 
-        const words = [];
+        // const words = [];
 
-        for (let i = 0; i < wordsArr.length; i++) {
-            words.push(
-                {word:wordsArr[i], value:i}
-            )
-        }
+        const wordsArr = this.props.activeCloud.words;
+        const words = this.generateWordsArray(wordsArr);
+
         const WORD_COUNT_KEY = 'value';
         const WORD_KEY = 'word';
 
