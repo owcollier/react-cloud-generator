@@ -26,9 +26,6 @@ export class Wordcloud extends React.Component {
             } else {
                 returnArr.push({word:words[i], value:1});
             }
-            // if (returnArr[{word:words[i]}]) {
-            //     returnArr.push({word:words[i], value: 1})
-            // }
         }
         return returnArr;
     }
