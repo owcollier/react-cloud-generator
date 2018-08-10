@@ -53,19 +53,24 @@ export class Wordcloud extends React.Component {
         const WORD_COUNT_KEY = 'value';
         const WORD_KEY = 'word';
 
-        const width = 800; // default width
-        const height = Math.min(width / 4 * 3, 500); // 4:3 ratio
-
         return (
             <div className="word-cloud-outer">
-                <div className='word-cloud-inner' style={cloudFontStyle}>
-                        <ReactWordCloud
-                            words={words}
-                            wordCountKey={WORD_COUNT_KEY}
-                            wordKey={WORD_KEY}
-                            height= {height}
-                            width={width}
-                        />
+                <div className='word-cloud-inner'>
+                    <ResizeAware>
+                        { size => {
+                            const width = size.width || 800; // default width
+                            const height = Math.min(width / 4 * 3, 500); // 4:3 ratio
+                            return (
+                                <ReactWordCloud
+                                    words={words}
+                                    wordCountKey={WORD_COUNT_KEY}
+                                    wordKey={WORD_KEY}
+                                    height= {height}
+                                    width={width}
+                                />
+                            );
+                        }}
+                    </ResizeAware>
                             {/* <TagCloud 
                                 className="tag-cloud"
                                 style={{
