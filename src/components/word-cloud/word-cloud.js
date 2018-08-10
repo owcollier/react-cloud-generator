@@ -53,14 +53,18 @@ export class Wordcloud extends React.Component {
         const WORD_COUNT_KEY = 'value';
         const WORD_KEY = 'word';
 
+        const width = 800; // default width
+        const height = Math.min(width / 4 * 3, 500); // 4:3 ratio
+
         return (
             <div className="word-cloud-outer">
                 <div className='word-cloud-inner' style={cloudFontStyle}>
-                    <ResizeAware>
                         <ReactWordCloud
                             words={words}
                             wordCountKey={WORD_COUNT_KEY}
                             wordKey={WORD_KEY}
+                            height= {height}
+                            width={width}
                         />
                             {/* <TagCloud 
                                 className="tag-cloud"
@@ -76,7 +80,6 @@ export class Wordcloud extends React.Component {
                                 }}>
                                 {words}
                             </TagCloud> */}
-                    </ResizeAware>
                     {this.props.view === 'focus' && <div className="edit-form">
                         <form onSubmit={(event) => this.onSubmit(event)}>
                             <button type="submit" name="submit" id="editWordCloud" className="button">
