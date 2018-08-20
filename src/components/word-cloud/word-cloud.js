@@ -31,6 +31,15 @@ export class Wordcloud extends React.Component {
         return returnArr;
     }
 
+    generateColorArray() {
+
+        return randomColor({
+            count: 10,
+            hue: this.props.activeCloud.color
+        })
+
+    }
+
     render() {
 
         // const deduped = [...new Set(this.props.activeCloud.words)];
@@ -41,14 +50,13 @@ export class Wordcloud extends React.Component {
         //         </div>
         //   ));
 
-        const cloudFontStyle = {
-            fontFamily: this.props.activeCloud.font
-        }
-
-        // const words = [];
+        // const cloudFontStyle = {
+        //     fontFamily: this.props.activeCloud.font
+        // }
 
         const wordsArr = this.props.activeCloud.words;
         const words = this.generateWordsArray(wordsArr);
+        const color = this.generateColorArray();
 
         const WORD_COUNT_KEY = 'value';
         const WORD_KEY = 'word';
