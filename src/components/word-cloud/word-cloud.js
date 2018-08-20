@@ -62,6 +62,7 @@ export class Wordcloud extends React.Component {
                             const height = Math.min(width / 4 * 3, 500); // 4:3 ratio
                             return (
                                 <ReactWordCloud
+                                    fontFamily={this.props.activeCloud.font}
                                     words={words}
                                     wordCountKey={WORD_COUNT_KEY}
                                     wordKey={WORD_KEY}
