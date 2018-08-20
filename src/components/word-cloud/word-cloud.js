@@ -54,8 +54,7 @@ export class Wordcloud extends React.Component {
         //     fontFamily: this.props.activeCloud.font
         // }
 
-        const wordsArr = this.props.activeCloud.words;
-        const words = this.generateWordsArray(wordsArr);
+        const words = this.generateWordsArray(this.props.activeCloud.words);
         const color = this.generateColorArray(this.props.activeCloud.color);
 
         const WORD_COUNT_KEY = 'value';
