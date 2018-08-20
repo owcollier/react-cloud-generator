@@ -31,11 +31,11 @@ export class Wordcloud extends React.Component {
         return returnArr;
     }
 
-    generateColorArray() {
+    generateColorArray(color) {
 
         return randomColor({
             count: 10,
-            hue: this.props.activeCloud.color
+            hue: color
         })
 
     }
@@ -56,7 +56,7 @@ export class Wordcloud extends React.Component {
 
         const wordsArr = this.props.activeCloud.words;
         const words = this.generateWordsArray(wordsArr);
-        const color = this.generateColorArray();
+        const color = this.generateColorArray(this.props.activeCloud.color);
 
         const WORD_COUNT_KEY = 'value';
         const WORD_KEY = 'word';
