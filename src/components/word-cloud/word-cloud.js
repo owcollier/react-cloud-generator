@@ -36,7 +36,7 @@ export class Wordcloud extends React.Component {
         return randomColor({
             count: 10,
             hue: color
-        })
+        });
 
     }
 
