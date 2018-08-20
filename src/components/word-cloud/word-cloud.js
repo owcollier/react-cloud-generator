@@ -55,7 +55,7 @@ export class Wordcloud extends React.Component {
         // }
 
         const words = this.generateWordsArray(this.props.activeCloud.words);
-        const color = this.generateColorArray(this.props.activeCloud.color);
+        const colors = this.generateColorArray(this.props.activeCloud.color);
 
         const WORD_COUNT_KEY = 'value';
         const WORD_KEY = 'word';
@@ -69,6 +69,7 @@ export class Wordcloud extends React.Component {
                             const height = Math.min(width / 4 * 3, 500); // 4:3 ratio
                             return (
                                 <ReactWordCloud
+                                    colors={colors}
                                     fontFamily={this.props.activeCloud.font}
                                     words={words}
                                     wordCountKey={WORD_COUNT_KEY}
