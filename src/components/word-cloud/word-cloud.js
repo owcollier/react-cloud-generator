@@ -61,7 +61,7 @@ export class Wordcloud extends React.Component {
         const WORD_KEY = 'word';
 
         return (
-            <div className='word-cloud-inner'>
+            <div className='word-cloud-wrapper'>
                 <ResizeAware>
                     { size => {
                         const width = size.width || 800; // default width

@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 
-.word-cloud-inner {
+.word-cloud-wrapper {
  /* display: flex;
  flex-direction: column; */
  height: 100%;
@@ -17,16 +17,8 @@ body {
  /* text-align: center; */
 }
 
-.tag-cloud {
- flex: 1;
-}
-
-.tag-cloud > div {
- transition: 1.4s;
-}
-
-.tag-cloud div {
-  font-size: 24px !important;
+.word-cloud-wrapper svg {
+  margin: 2em 0;
 }
 
 .edit-form {
