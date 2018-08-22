@@ -62,7 +62,7 @@ export class Wordcloud extends React.Component {
 
         return (
             <div className='word-cloud-wrapper'>
-                <ResizeAware style={{ position: 'relative' }}>
+                <ResizeAware>
                     { size => {
                         const width = size.width || 800; // default width
                         const height = Math.min(width / 4 * 3, 500); // 4:3 ratio

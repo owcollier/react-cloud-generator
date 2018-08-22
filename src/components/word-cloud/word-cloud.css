@@ -13,11 +13,16 @@ body {
  flex-direction: column; */
  height: 100%;
  width: 100%;
-
  /* text-align: center; */
 }
 
+.word-cloud-wrapper > div:first-child {
+  background-color: white;
+  margin: 2% 2%;
+}
+
 .word-cloud-wrapper svg {
+  text-align: center;
   margin: 2em 0;
 }
 
