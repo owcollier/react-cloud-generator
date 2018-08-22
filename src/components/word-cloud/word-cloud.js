@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import GeneratorForm from '../generator-form/generator-form';
 // import {goEdit, downVoteCloud, upVoteCloud} from '../../actions/actions';
 import {goEdit} from '../../actions/actions';
-import TagCloud from 'react-tag-cloud';
+// import TagCloud from 'react-tag-cloud';
 import ResizeAware from 'react-resize-aware';
 import ReactWordCloud from 'react-wordcloud';
 import randomColor from 'randomcolor';
@@ -61,25 +61,24 @@ export class Wordcloud extends React.Component {
         const WORD_KEY = 'word';
 
         return (
-            <div className="word-cloud-outer">
-                <div className='word-cloud-inner'>
-                    <ResizeAware>
-                        { size => {
-                            const width = size.width || 800; // default width
-                            const height = Math.min(width / 4 * 3, 500); // 4:3 ratio
-                            return (
-                                <ReactWordCloud
-                                    colors={colors}
-                                    fontFamily={this.props.activeCloud.font}
-                                    words={words}
-                                    wordCountKey={WORD_COUNT_KEY}
-                                    wordKey={WORD_KEY}
-                                    height= {height}
-                                    width={width}
-                                />
-                            );
-                        }}
-                    </ResizeAware>
+            <div className='word-cloud-inner'>
+                <ResizeAware>
+                    { size => {
+                        const width = size.width || 800; // default width
+                        const height = Math.min(width / 4 * 3, 500); // 4:3 ratio
+                        return (
+                            <ReactWordCloud
+                                colors={colors}
+                                fontFamily={this.props.activeCloud.font}
+                                words={words}
+                                wordCountKey={WORD_COUNT_KEY}
+                                wordKey={WORD_KEY}
+                                height= {height}
+                                width={width}
+                            />
+                        );
+                    }}
+                </ResizeAware>
                             {/* <TagCloud 
                                 className="tag-cloud"
                                 style={{
@@ -94,17 +93,16 @@ export class Wordcloud extends React.Component {
                                 }}>
                                 {words}
                             </TagCloud> */}
-                    {this.props.view === 'focus' && <div className="edit-form">
-                        <form onSubmit={(event) => this.onSubmit(event)}>
-                            <button type="submit" name="submit" id="editWordCloud" className="button">
-                                Edit Word Cloud
-                            </button>
-                        </form>
-                     </div>}
-                     {this.props.view === 'cloudEdit' && <div className="edit-form">
-                        <GeneratorForm />
-                     </div>}
-                </div>
+                {this.props.view === 'focus' && <div className="edit-form">
+                    <form onSubmit={(event) => this.onSubmit(event)}>
+                        <button type="submit" name="submit" id="editWordCloud" className="button">
+                            Edit Word Cloud
+                        </button>
+                    </form>
+                </div>}
+                {this.props.view === 'cloudEdit' && <div className="edit-form">
+                    <GeneratorForm />
+                </div>}
             </div>
         );
     }
