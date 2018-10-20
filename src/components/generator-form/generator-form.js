@@ -26,7 +26,8 @@ export class GeneratorForm extends React.Component {
       this.setState({
         text: target.value,
         // words: target.value.split(/\ |\.|\?|\!|\-|\(|\)|\&|\,/)
-        words: target.value.split(/[\W\s_]/ )
+        words: target.value.toLowerCase().split(/[^\w-–']/ )
+        // (?=\S*['-])([a-zA-Z'-]+)
       })
     }
     else if (target.name === 'cloudTitle') {
