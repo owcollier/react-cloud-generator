@@ -52,13 +52,14 @@ input {
 }
 
 select {
-  font-size: 20px;
   background: white;
+  font-size: 20px;
+  padding: 10px;
 
   font-family: "franklin-gothic-urw-comp",sans-serif;
 
   margin-left: 1em;
-  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 /* #generateWordCloudButton {
