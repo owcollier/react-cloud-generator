@@ -125,7 +125,7 @@ export class GeneratorForm extends React.Component {
         <div className="select-flex-div">
           <div>
             <label htmlFor="fontColor">Font Color:</label>
-            <select onChange={this.handleInputChange} name="fontColor" id="fontColor" size="1" defaultValue={this.props.activeCloud.color}>
+            <select onChange={this.handleInputChange} name="fontColor" id="fontColor" size="1" defaultValue={this.props.view === 'create' ? 'random' : this.props.activeCloud.color}>
               <option value="red">Red</option>
               <option value="orange">Orange</option>
               <option value="yellow">Yellow</option>
@@ -139,7 +139,7 @@ export class GeneratorForm extends React.Component {
           </div>
           <div>
             <label htmlFor="fontStyle">Font Family:</label>
-            <select onChange={this.handleInputChange} name="fontStyle" id="fontStyle" size="1" defaultValue={this.props.activeCloud.font}>
+            <select onChange={this.handleInputChange} name="fontStyle" id="fontStyle" size="1" defaultValue={this.props.view === 'create' ? 'serif' : this.props.activeCloud.font}>
               <option value="serif">serif</option>
               <option value="sans-serif">sans-serif</option>
               <option value="monospace">monospace</option>
