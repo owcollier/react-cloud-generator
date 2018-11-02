@@ -10,10 +10,13 @@ export class TopNav extends React.Component {
         super(props);
 
         this.state = {
+
             isHeaderSticky: false
+
         }
 
         this.activeHeader = React.createRef();
+        this.handleScroll = this.handleScroll.bind(this);
       }
 
     componentDidMount() {
@@ -22,13 +25,28 @@ export class TopNav extends React.Component {
 
     }
 
-    handleScroll(event) {
-        // const pageY = window.scrollY;
-        const topHeaderLinks = this.activeHeader.getBoundingClientRect().top;
+    handleScroll() {
+        const pageY = window.scrollY;
+        const topHeaderLinks = this.activeHeader.current.getBoundingClientRect().top;
+        console.log(topHeaderLinks, pageY);
 
-        console.log('I keep scrollin scrollin scrollin scrollin');
-        console.log('active header y top y position? :', topHeaderLinks);
+        if (!this.state.isHeaderSticky) {
 
+            if (topHeaderLinks <= 0) {
+                this.setState({
+                    isHeaderSticky: true
+                });
+            }
+
+        } else {
+
+            if (topHeaderLinks > 0) {
+                this.setState({
+                    isHeaderSticky: false
+                }); 
+            }
+
+        }
 
     }
 
