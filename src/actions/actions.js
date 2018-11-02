@@ -63,7 +63,7 @@ export const updateCloudRequest = () => ({
 
 export const UPDATE_CLOUD_SUCCESS = 'UPDATE_CLOUD_SUCCESS';
 export const updateCloudSuccess =  (data) => {
-  console.log('Made it to update cloud success');
+  // console.log('Made it to update cloud success');
   return {
     type: UPDATE_CLOUD_SUCCESS,
     id: data._id,
