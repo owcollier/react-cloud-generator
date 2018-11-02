@@ -5,7 +5,7 @@ import GeneratorForm from '../generator-form/generator-form';
 
 import './create-view.css';
 
-import { fetchClouds } from '../../actions/actions';
+// import { fetchClouds } from '../../actions/actions';
 
 export function CreateView(props) {
   return (
