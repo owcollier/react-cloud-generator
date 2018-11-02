@@ -11,9 +11,9 @@ export function CreateView(props) {
   return (
     <section className="create-view">
       <GeneratorForm />
-      <div className="footer-link-a">
+      {/* <div className="footer-link-a">
         <a className="library" onClick={() => props.dispatch(fetchClouds())}>Browse the Word Cloud Library</a>
-      </div>
+      </div> */}
     </section>
   );
 }
