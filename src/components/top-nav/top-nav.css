@@ -10,8 +10,7 @@
 
 .nav-flex-2 {
     background-color: #393E46;
-
-    position: block;
+    position: absolute;
     top: 100px;
 }
 
