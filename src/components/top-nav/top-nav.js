@@ -16,6 +16,7 @@ export class TopNav extends React.Component {
         }
 
         this.activeHeader = React.createRef();
+        this.staticHeader = React.createRef();
         this.handleScroll = this.handleScroll.bind(this);
       }
 
@@ -28,27 +29,28 @@ export class TopNav extends React.Component {
     handleScroll() {
     
         const pageY = window.scrollY;
-        const topHeaderLinks = this.activeHeader.current.getBoundingClientRect().top;
+        // const topHeaderLinks = this.activeHeader.current.getBoundingClientRect().top;
+        const bottomStaticHeader = this.staticHeader.current.getBoundingClientRect().bottom;
 
-        console.log(topHeaderLinks, pageY);
+        console.log(pageY, bottomStaticHeader);
 
-        if (this.state.isHeaderSticky) {
+        // if (!this.state.isHeaderSticky) {
 
-            if (topHeaderLinks <= 0) {
-                this.setState({
-                    isHeaderSticky: true
-                });
-            }
+        //     if (topHeaderLinks <= 0) {
+        //         this.setState({
+        //             isHeaderSticky: true
+        //         });
+        //     }
 
-        } else {
+        // } else {
 
-            if (topHeaderLinks > 0) {
-                this.setState({
-                    isHeaderSticky: false
-                }); 
-            }
+        //     if (topHeaderLinks > 0) {
+        //         this.setState({
+        //             isHeaderSticky: false
+        //         }); 
+        //     }
 
-        }
+        // }
 
     }
 
@@ -56,7 +58,7 @@ export class TopNav extends React.Component {
 
         return (
         <div className="nav-container">
-            <div className="nav-flex-1">
+            <div className="nav-flex-1" ref={this.staticHeader}>
                 <div className="header-text-div">
                     <div className="header-text-inner">
                         <div className="header-icon">
