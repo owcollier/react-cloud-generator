@@ -10,6 +10,9 @@
 
 .nav-flex-2 {
     background-color: #393E46;
+
+    position: block;
+    top: 100px;
 }
 
 .header-text-div {
@@ -102,6 +105,7 @@
 
 .active-header {
     position: fixed;
+    width: 100%;
     top: 0;
 }
 

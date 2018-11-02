@@ -26,11 +26,13 @@ export class TopNav extends React.Component {
     }
 
     handleScroll() {
+    
         const pageY = window.scrollY;
         const topHeaderLinks = this.activeHeader.current.getBoundingClientRect().top;
+
         console.log(topHeaderLinks, pageY);
 
-        if (!this.state.isHeaderSticky) {
+        if (this.state.isHeaderSticky) {
 
             if (topHeaderLinks <= 0) {
                 this.setState({
