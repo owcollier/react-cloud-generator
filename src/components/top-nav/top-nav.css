@@ -100,6 +100,11 @@
     color: #00FFF5;
 }
 
+.active-header {
+    display: fixed;
+    top: 0;
+}
+
 @media (max-width: 1400px) {
     .nav-container {
         flex-direction: column;
