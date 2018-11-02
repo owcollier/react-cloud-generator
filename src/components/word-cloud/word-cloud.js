@@ -15,7 +15,7 @@ export class Wordcloud extends React.Component {
     onSubmit(event) {
         event.preventDefault();
         this.props.dispatch(goEdit());
-      }
+    }
 
     generateWordsArray(words) {
         const returnArr = [];

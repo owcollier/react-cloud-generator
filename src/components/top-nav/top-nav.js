@@ -12,6 +12,14 @@ export class TopNav extends React.Component {
         this.activeHeader = React.createRef();
       }
 
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll(event) {
+        console.log('I keep scrollin scrollin scrollin scrollin');
+    }
+
     render() {
 
         return (
