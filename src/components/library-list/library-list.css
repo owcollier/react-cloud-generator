@@ -32,10 +32,6 @@ ul {
     display: block
 }
 
-span {
-    font-size: 75%
-}
-
 @media (max-width: 800px) {
 
     .cloud-list-item {
