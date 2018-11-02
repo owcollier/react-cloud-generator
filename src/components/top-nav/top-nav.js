@@ -6,6 +6,12 @@ import { goHome, goCreate, fetchClouds} from '../../actions/actions';
 
 export class TopNav extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.activeHeader = React.createRef();
+      }
+
     render() {
 
         return (
@@ -26,7 +32,7 @@ export class TopNav extends React.Component {
                     <span className="header-span">a word cloud generator built with React.js</span>
                 </div>
             </div>
-            <div className="nav-flex-2" id="activeHeader">
+            <div className="nav-flex-2" id="activeHeader" ref={this.activeHeader}>
                 <nav>
                     <ul className="nav">
                         <li className="nav-items">
