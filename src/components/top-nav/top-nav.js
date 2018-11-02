@@ -17,7 +17,10 @@ export class TopNav extends React.Component {
     }
 
     handleScroll(event) {
+        const pageY = window.scrollY;
+
         console.log('I keep scrollin scrollin scrollin scrollin');
+        console.log('scroll Y position:', pageY);
     }
 
     render() {
