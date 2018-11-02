@@ -1,4 +1,6 @@
 .textArea {
+  background: white;
+
   width: 100%;
   height: 14em;
 
@@ -34,6 +36,7 @@ label {
 }
 
 input {
+  background: white;
   width: 20em;
 
   padding: 10px;
