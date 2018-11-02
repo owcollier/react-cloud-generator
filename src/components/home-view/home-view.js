@@ -15,7 +15,7 @@ export function HomeView(props) {
     <section className="home-view">
       <div className="home-description">
         <p className="home-description-p">
-          Welcome to React Cloud Generator, a simple word cloud generator built with <a className="home-description-link">React.js</a> and the <a className="home-description-link" href="https://github.com/chrisrzhou/react-wordcloud" target="_blank">react-wordcloud</a> library.
+          Welcome to React Cloud Generator, a simple word cloud generator built with <a className="home-description-link">React.js</a> and the <a className="home-description-link" href="https://github.com/chrisrzhou/react-wordcloud" target="_blank" rel="noopener noreferrer">react-wordcloud</a> library.
           <br></br><br></br>
           Using the Create feature, you can generate word clouds based on text input and customize the result using a variety of color palettes and font families. When you select Create in the navigation menu, you will be provided with a word cloud generator form that looks something like the example displayed below:
           <br></br><br></br>
