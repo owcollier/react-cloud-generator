@@ -17,15 +17,19 @@ export class TopNav extends React.Component {
       }
 
     componentDidMount() {
+
         window.addEventListener('scroll', this.handleScroll);
+
     }
 
     handleScroll(event) {
         // const pageY = window.scrollY;
-        const topHeaderLinks = this.activeHeader.getBoundingClientRect().top
+        const topHeaderLinks = this.activeHeader.getBoundingClientRect().top;
 
         console.log('I keep scrollin scrollin scrollin scrollin');
-        console.log('scroll Y position:', pageY, 'active header y top y position? :', topHeaderLinks);
+        console.log('active header y top y position? :', topHeaderLinks);
+
+
     }
 
     render() {
@@ -48,7 +52,7 @@ export class TopNav extends React.Component {
                     <span className="header-span">a word cloud generator built with React.js</span>
                 </div>
             </div>
-            <div className="nav-flex-2" id="activeHeader" ref={this.activeHeader}>
+            <div className={ this.state.isHeaderSticky ? "nav-flex-2 active-header" : "nav-flex-2"} id="activeHeader" ref={this.activeHeader}>
                 <nav>
                     <ul className="nav">
                         <li className="nav-items">

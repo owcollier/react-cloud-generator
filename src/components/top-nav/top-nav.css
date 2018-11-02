@@ -101,7 +101,7 @@
 }
 
 .active-header {
-    display: fixed;
+    position: fixed;
     top: 0;
 }
 
