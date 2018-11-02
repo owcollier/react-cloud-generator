@@ -65,7 +65,8 @@ export class Wordcloud extends React.Component {
                 <ResizeAware>
                     { size => {
                         const width = size.width || 1280; // 800 default width
-                        const height = Math.min(width / 16 * 9, 720); // 500 4:3 ratio
+                        // const height = Math.min(width / 21 * 9, 548); // 500 4:3 ratio
+                        const height = 600;
                         return (
                             <ReactWordCloud
                                 colors={colors}
