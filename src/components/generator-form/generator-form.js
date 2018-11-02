@@ -140,10 +140,10 @@ export class GeneratorForm extends React.Component {
           <div>
             <label htmlFor="fontStyle">Font Family:</label>
             <select onChange={this.handleInputChange} name="fontStyle" id="fontStyle" size="1" defaultValue={this.props.view === 'create' ? 'serif' : this.props.activeCloud.font}>
-              <option value="serif">serif</option>
-              <option value="sans-serif">sans-serif</option>
-              <option value="monospace">monospace</option>
-              <option value="cursive">cursive</option>
+              <option value="serif">Serif</option>
+              <option value="sans-serif">Sans-serif</option>
+              <option value="monospace">Monospace</option>
+              <option value="cursive">Cursive</option>
             </select>
           </div>
         </div>
