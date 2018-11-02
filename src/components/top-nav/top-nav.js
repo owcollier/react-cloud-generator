@@ -9,6 +9,10 @@ export class TopNav extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            isHeaderSticky: false
+        }
+
         this.activeHeader = React.createRef();
       }
 
@@ -17,7 +21,7 @@ export class TopNav extends React.Component {
     }
 
     handleScroll(event) {
-        const pageY = window.scrollY;
+        // const pageY = window.scrollY;
         const topHeaderLinks = this.activeHeader.getBoundingClientRect().top
 
         console.log('I keep scrollin scrollin scrollin scrollin');
