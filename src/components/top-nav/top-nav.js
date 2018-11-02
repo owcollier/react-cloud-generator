@@ -18,9 +18,10 @@ export class TopNav extends React.Component {
 
     handleScroll(event) {
         const pageY = window.scrollY;
+        const topHeaderLinks = this.activeHeader.getBoundingClientRect().top
 
         console.log('I keep scrollin scrollin scrollin scrollin');
-        console.log('scroll Y position:', pageY);
+        console.log('scroll Y position:', pageY, 'active header y top y position? :', topHeaderLinks);
     }
 
     render() {
