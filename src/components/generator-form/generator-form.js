@@ -95,7 +95,9 @@ export class GeneratorForm extends React.Component {
       <form onSubmit={e => this.onSubmit(e)}>
       <div className="generator-form-flex">
         <div>
-          <label htmlFor="textInput" id="instructionalLabel">please input text below</label>
+          <label htmlFor="textInput" id="instructionalLabel">Please input text below</label>
+          <br></br>
+          <span>(Larger input sizes tend to produce 'better looking' word clouds! I.e. song lyrics, poems, or paragraphs)</span>
         </div>
         <div>
           <textarea
@@ -103,7 +105,7 @@ export class GeneratorForm extends React.Component {
           name="textInput"
           id="textInput"
           className="textArea"
-          defaultValue={this.props.activeCloud.text}
+          defaultValue={this.props.view === 'create' ? '' : this.props.activeCloud.text}
           required
           ref={(input) => { this.textInput = input; }}>
           </textarea>
@@ -116,7 +118,7 @@ export class GeneratorForm extends React.Component {
           name="cloudTitle"
           id="cloudTitle"
           className="text"
-          defaultValue={this.props.activeCloud.title}
+          defaultValue={this.props.view === 'create' ? '' : this.props.activeCloud.title}
           required
           ref={(input) => { this.titleInput = input; }}/>
         </div>
